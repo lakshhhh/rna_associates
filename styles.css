@@ -1,0 +1,38 @@
+/* root styles */
+body{
+    background-color:rgb(223, 222, 222) !important ;
+}
+
+/* end of root styles */
+/* navbar styles */
+ .nav-link
+{
+    color: white;
+}
+
+.navbar{
+    background-color: black ;
+    position: fixed;
+}
+
+
+/* navbar style ends here */
+
+/* banner styles */
+#banner-section
+{
+    background: url("bg1.jpg") no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    height: 100vh;
+}
+/* banner style ends here  */
+
+/* news style */
+
+#news-section .card
+{
+    background-color: white;
+}
+
+/* news style ends here */
