@@ -1,18 +1,28 @@
 /* root styles */
 body{
+    font-family: 'Noto Sans', sans-serif !important;
     background-color:rgb(223, 222, 222) !important ;
 }
 
 /* end of root styles */
 /* navbar styles */
- .nav-link
+ .nav-link,.navbar-brand
 {
-    color: white;
+    color: black;
+}
+
+.nav-link{
+    font-weight:500;
+    margin-right: 2rem;
 }
 
 .navbar{
-    background-color: black;
+    background-color: white;
     position: fixed;
+}
+.navbar-brand img{
+    object-fit: contain;
+    height: 4rem;
 }
 
 
@@ -33,6 +43,18 @@ body{
 #news-section .card
 {
     background-color: white;
+}
+#news-section .card-header{
+    background-color: black;
+    color: white;
+}
+
+#news-carousel img
+{
+    width: 30rem;
+    height: 20rem;
+    object-fit: contain;
+    background-color: black;
 }
 
 /* news style ends here */
