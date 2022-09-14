@@ -3,6 +3,9 @@ body{
     font-family: 'Noto Sans', sans-serif !important;
     background-color:rgb(223, 222, 222) !important ;
 }
+.card{
+    box-shadow: 1rem 1rem 1rem 0 rgba(0,0,0,.2);
+}
 
 /* end of root styles */
 /* navbar styles */
@@ -19,6 +22,7 @@ body{
 .navbar{
     background-color: white;
     position: fixed;
+    box-shadow: 0 1rem 1rem 0 rgba(0,0,0,.2);
 }
 .navbar-brand img{
     object-fit: contain;
@@ -31,6 +35,7 @@ body{
 /* banner styles */
 #banner-section
 {
+    margin-top: 4rem;
     background: url("bg1.jpg") no-repeat;
     background-size: cover;
     object-fit: contain;
@@ -183,5 +188,6 @@ color: #fff;
     background: url("service.jpg") no-repeat;
     background-size: cover;
     object-fit: contain;
-    height: 50vh;
+    background-position: bottom;
+    height: 100vh;
  }
