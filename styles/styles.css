@@ -26,7 +26,7 @@ body{
 
 .navbar{
     /* opacity: 0; */
-    background-color: rgba(250, 250, 250,0.2);
+    background-color: rgba(250, 250, 250,0.6);
     position: fixed;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,.2);
 }

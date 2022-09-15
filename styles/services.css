@@ -1,6 +1,12 @@
 #service-banner{
-    background: url("/images/covers/service.jpg") no-repeat;
+    /* background: url("https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwc3BhY2V8ZW58MHx8MHx8&w=1000&q=80") no-repeat; */
     background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+    /* linear-gradient(to top,
+      rgba(0, 0, 0, 0.75),
+      rgba(255, 255, 255, 0.75)),  */
+      url('https://cu-media.s3.amazonaws.com/images/desk-comp.jpg');
     object-fit: contain;
     background-position: bottom;
     height: 100vh;
@@ -8,7 +14,11 @@
 
  .gear-icon
  {
-    opacity: 0.5;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    /* opacity: 0.5;
+    filter: blur(0.5rem); */
     /* height: 100vh;
     background-position: center;
     padding: 0;
