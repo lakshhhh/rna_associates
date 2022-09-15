@@ -5,3 +5,14 @@
     background-position: bottom;
     height: 100vh;
  }
+
+ .gear-icon
+ {
+    opacity: 0.5;
+    /* height: 100vh;
+    background-position: center;
+    padding: 0;
+    background-image: url("/images/gear-icon.png");
+    opacity: 0.4;
+    background-repeat: no-repeat; */
+ }
