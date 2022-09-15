@@ -11,12 +11,16 @@ body{
 /* navbar styles */
  .nav-link,.navbar-brand
 {
-    color: black;
+    color: black !important;
 }
 
 .nav-link{
     font-weight:500;
     margin-right: 2rem;
+}
+.active{
+    font-weight:700;
+
 }
 
 .navbar{
@@ -32,37 +36,9 @@ body{
 
 /* navbar style ends here */
 
-/* banner styles */
-#banner-section
-{
-    margin-top: 4rem;
-    background: url("bg1.jpg") no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    height: 70vh;
-}
-/* banner style ends here  */
 
-/* news style */
 
-#news-section .card
-{
-    background-color: white;
-}
-#news-section .card-header{
-    background-color: black;
-    color: white;
-}
 
-#news-carousel img
-{
-    width: 30rem;
-    height: 20rem;
-    object-fit: contain;
-    background-color: black;
-}
-
-/* news style ends here */
 section {  
     padding: 60px 0;  
 }  
@@ -146,9 +122,7 @@ color: #fff;
 
 }
 
-.team{
-    text-align: center;
-}
+
 .services{
     object-fit: cover;
     width:100%;
@@ -183,11 +157,4 @@ color: #fff;
     position: absolute;
     right:0;
     bottom:0;
- }
- #service-banner{
-    background: url("service.jpg") no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    background-position: bottom;
-    height: 100vh;
  }

@@ -1,0 +1,7 @@
+#service-banner{
+    background: url("/images/covers/service.jpg") no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-position: bottom;
+    height: 100vh;
+ }
