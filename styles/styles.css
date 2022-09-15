@@ -11,12 +11,13 @@ body{
 /* navbar styles */
  .nav-link,.navbar-brand
 {
-    color: black !important;
+    color: #003153 !important;
 }
 
 .nav-link{
     font-weight:500;
     margin-right: 2rem;
+   
 }
 .active{
     font-weight:700;
@@ -24,7 +25,8 @@ body{
 }
 
 .navbar{
-    background-color: white;
+    /* opacity: 0; */
+    background-color: rgba(250, 250, 250,0.2);
     position: fixed;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,.2);
 }
@@ -49,7 +51,7 @@ section .section-title {
     text-transform: uppercase;  
 }  
 #footer {  
-    background: #3c341f ;  
+    background: #003153;  
 }  
 #footer h5 {  
    padding-left: 10px;  
@@ -157,4 +159,7 @@ color: #fff;
     position: absolute;
     right:0;
     bottom:0;
+ }
+ .banner-text{
+    text-align: center;
  }

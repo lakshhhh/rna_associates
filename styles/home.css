@@ -4,6 +4,7 @@
 {
     background: url("/images/covers/bg1.jpg") no-repeat;
     background-size: cover;
+    background-color: rgba(0,0,0,0.8);
     object-fit: contain;
     height: 100vh;
 }
@@ -100,3 +101,24 @@
 
 
 /* team styles ends here */
+
+/* feedback carousel starts here  */
+
+#feedback-slider{
+  background-image:url("https://lh6.googleusercontent.com/proxy/ZnsDnwHvqWozX0b69sqLWni1rj_W-HnXxAzcNP2ARO22Qh-STFe50oX1bgvaS61gx0HMA0ZOQtdobpwJwLfW1MF8JwFRjua9nEY4hYSOgjts_j-SduTKjl157oL6Iwsk0yw=w1200-h630-p-k-no-nu") ;
+  height: 70vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#feedback-carousel{
+  color: white;
+}
+.feedback-img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+/* feedback carousel ends here  */
