@@ -14,9 +14,12 @@
 
  .gear-icon
  {
-    width: 5rem;
-    height: 5rem;
-    object-fit: contain;
+   opacity: 0.5;
+   object-fit: contain !important;
+   /* height: 100vh ; */
+    /* width: 5rem;
+    height: 5rem; */
+    /* object-fit: contain; */
     /* opacity: 0.5;
     filter: blur(0.5rem); */
     /* height: 100vh;
@@ -25,4 +28,14 @@
     background-image: url("/images/gear-icon.png");
     opacity: 0.4;
     background-repeat: no-repeat; */
+ }
+
+ #service-block img{
+   height: 100vh;
+   object-fit: cover;
+   max-height: 10rem;
+ }
+
+ #service-block{
+   background-color: white;
  }
