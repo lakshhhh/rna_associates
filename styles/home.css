@@ -1,12 +1,35 @@
 
 /* banner styles */
-#banner-section
+/* #banner-section
 {
     background: url("/images/covers/bg1.jpg") no-repeat;
     background-size: cover;
     background-color: rgba(0,0,0,0.8);
     object-fit: contain;
     height: 100vh;
+} */
+#banner-section img{
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+#banner-carousel{
+  width: 100%;
+}
+
+.text-container{
+    position: relative;
+    text-align: center;
+}
+.text-over-image{
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  
 }
 /* banner style ends here  */
 
@@ -18,7 +41,7 @@
 }
 
 #news-section .card-header{
-    background-color: black;
+    background-color: #003153 ;
     color: white;
 }
 
@@ -105,7 +128,8 @@
 /* feedback carousel starts here  */
 
 #feedback-slider{
-  background-image:url("https://lh6.googleusercontent.com/proxy/ZnsDnwHvqWozX0b69sqLWni1rj_W-HnXxAzcNP2ARO22Qh-STFe50oX1bgvaS61gx0HMA0ZOQtdobpwJwLfW1MF8JwFRjua9nEY4hYSOgjts_j-SduTKjl157oL6Iwsk0yw=w1200-h630-p-k-no-nu") ;
+  text-shadow: 2px 2px 8px black;
+  background-image:url("/images/covers/feedbakc-slider.jpeg") ;
   height: 70vh;
   background-attachment: fixed;
   background-size: cover;

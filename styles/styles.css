@@ -6,6 +6,9 @@ body{
 .card{
     box-shadow: 1rem 1rem 1rem 0 rgba(0,0,0,.2);
 }
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+  }
 
 /* end of root styles */
 /* navbar styles */
@@ -26,7 +29,7 @@ body{
 
 .navbar{
     /* opacity: 0; */
-    background-color: rgba(250, 250, 250,0.6);
+    background-color: floralwhite;
     position: fixed;
     box-shadow: 0 1rem 1rem 0 rgba(0,0,0,.2);
 }
