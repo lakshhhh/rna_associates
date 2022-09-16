@@ -10,6 +10,21 @@ body{
     background-color: rgba(0,0,0,0.5);
   }
 
+.text-container{
+    position: relative;
+    text-align: center;
+}
+.text-over-image{
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  
+}
+
 /* end of root styles */
 /* navbar styles */
  .nav-link,.navbar-brand

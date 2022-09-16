@@ -17,20 +17,7 @@
   width: 100%;
 }
 
-.text-container{
-    position: relative;
-    text-align: center;
-}
-.text-over-image{
-  position: absolute;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 8px black;
-  
-}
+
 /* banner style ends here  */
 
 /* news style */

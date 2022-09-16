@@ -1,0 +1,9 @@
+#about-banner
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url('/images/covers/aboutus.jpg');
+    object-fit: contain;
+    background-position: bottom;
+    height: 100vh;
+}
