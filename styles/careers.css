@@ -14,3 +14,7 @@
    /* background-position: bottom; */
    height: 100vh;
 }
+
+#jobs-section .btn{
+    background-color: #003153 !important;
+}
