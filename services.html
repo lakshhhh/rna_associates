@@ -15,6 +15,7 @@
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href=
 "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" /> 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
       <nav class="navbar navbar-expand-lg fixed-top">
@@ -43,12 +44,12 @@
         </div>
       </nav>
 
-   <section id="service-banner" class = "justify-content-center d-flex align-items-center" >
+   <section id="service-banner" class = "justify-content-center d-flex align-items-center" data-aos="fade-down">
       <div class="row d-flex justify-content-center align-items-center">
-        <h1 class = "text-light display-4" style="color: white;">Services</h1>
+        <h1 class = "text-light display-4" data-aos="zoom-in" style="color: white;">Services</h1>
       </div>
     </section>
-    <section id="service-block">
+    <section id="service-block" data-aos="zoom-out">
       <div class="container-fluid">
         <div class ="row">
           <div class="col-sm-7">
@@ -154,7 +155,7 @@
         <section>
         <div class="container my-5">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-              <div class="col-md-4 my-2">
+              <div class="col-md-4 my-2" data-aos="fade-down">
                 <div class="card bg-dark text-white h-100">
                   <img src="https://tse4.mm.bing.net/th?id=OIP.J_Kc2-Dv4saHSiGewO0P3AHaEU&pid=Api&P=0" class="card-img-top-career" alt="...">
                   <div class="card-body">
@@ -163,7 +164,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 my-2">
+              <div class="col-md-4 my-2" data-aos="fade-down">
                 <div class="card bg-dark text-white h-100">
                   <img src="https://tse1.explicit.bing.net/th?id=OIP.5-ps2K744cplVujiG7sTvQHaE8&pid=Api&P=0" class="card-img-top-career" alt="...">
                   <div class="card-body">
@@ -172,7 +173,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 my-2">
+              <div class="col-md-4 my-2" data-aos="fade-down">
                 <div class="card bg-dark text-white h-100">
                   <img src="https://tse2.mm.bing.net/th?id=OIP.C_vlu77nMamZpiWZEHTK6QHaE8&pid=Api&P=0" class="card-img-top-career" alt="...">
                   <div class="card-body">
@@ -190,7 +191,7 @@
             </div>      
           
   <section id="footer">  
-    <div class="container">  
+    <div class="container" data-aos="zoom-in">  
     <div class="row text-center text-xs-center text-sm-left text-md-left">  
     <div class="col-xs-12 col-sm-4 col-md-4">  
     <h5> Quick links </h5>  
@@ -248,5 +249,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>  
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>  
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
   </html>

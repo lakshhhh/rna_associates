@@ -8,12 +8,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">  
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  
-       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
+       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
     </head>
     <body>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="images/favicon.png" ></img></a>
+          <!-- <img src="images/favicon.png" class="animated bounce infinite" alt="Transparent MDB Logo" id="animated-img1"> -->
+          <a class="navbar-brand" href="index.html"><img src="images/favicon.png" ></img></a> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,12 +41,12 @@
           </div>
         </div>
       </nav>
-      <section id="about-banner" class="text-container">
+      <section id="about-banner" class="text-container" data-aos="fade-down">
         <h2 style="z-index: 99;" class="display-4 text-over-image">About us</h2>
       </section>
 
       <section>
-        <div class="container">
+        <div class="container" data-aos="fade-down">
           <div class="row ">
             <div class="col-sm-8">
               <h2 class="text-left">What we do</h2>
@@ -71,7 +76,8 @@ Globally we work with the executives, through NHBS LLP-Global, to help them make
           </div>
         </section>
         <section>
-          <div class="container">
+          <div class="container" data-aos="fade-up"
+          data-aos-anchor-placement="center-center">
         <div class="row d-flex justify-content-center">
           <div class="col-md-4">
             <div class="card p-3">
@@ -89,27 +95,41 @@ Globally we work with the executives, through NHBS LLP-Global, to help them make
           </div>
         </section>
         <section>
-          <div class="container">
+          <div class="container" data-aos="zoom-in">
             <h1 class=" heading text-center">Our Values</h1>
             <div class=" about-values">
               <div class="row justify-content-center d-flex">
-                  <div class="col-sm-6 p-5"><h6 class="text-center">Trust and Confidentiality</h6></div>
-                  <div class="col-sm-6 p-5"><h6 class="text-center">Finances and Security</h6></div>
+                  <div class="col-sm-6 p-5 justify-content-center d-flex">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.0VtUak6JM9BN04tE5wQneAAAAA&pid=Api&P=0" class="aboutus-symbols"><br>
+                    <h6 class="text-center">Trust and Confidentiality</h6></div>
+                  <div class="col-sm-6 p-5">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.tZ0VQAotc1BYYj3PvFcNXwHaG7&pid=Api&P=0" class="aboutus-symbols">
+                    <h6 class="text-center">Finances and Security</h6></div>
               </div>
               <div class="row justify-content-center d-flex">
-                <div class="col-sm-4 p-5"><h6 class="text-center">Terms and Conditions</h6></div>
-              <div class="col-sm-4 p-5"><h6 class="text-center">Empathy</h6></div>
-              <div class="col-sm-4 p-5"><h6 class="text-center">Team spirit</h6></div>
+                <div class="col-sm-4 p-5 justify-content-center d-flex">
+                  <img src="https://tse4.mm.bing.net/th?id=OIP.u5fDtIgluhyY88BevYDZiwHaJQ&pid=Api&P=0" class="aboutus-symbols">
+                  <h6 class="text-center">Terms and Conditions</h6></div>
+              <div class="col-sm-4 p-5 justify-content-center d-flex">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.VpaiF944k1uiMXe9RG41RwHaEn&pid=Api&P=0" class="aboutus-symbols">
+                <h6 class="text-center">Empathy</h6></div>
+              <div class="col-sm-4 p-5 justify-content-center d-flex">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.7TnUpEl6MMASM0vO4eXVagHaHa&pid=Api&P=0" class="aboutus-symbols">
+                <h6 class="text-center">Team spirit</h6></div>
             </div>
             <div class="row justify-content-center d-flex">
-              <div class="col-sm-6 p-5"><h6 class="text-center">Cherished relationships </h6></div>
-              <div class="col-sm-6 p-5"><h6 class="text-center">Customer satisfaction</h6></div>
+              <div class="col-sm-6 p-5 justify-content-center d-flex">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.baGSDEvDRdBJEjPN2pQQ5AHaDf&pid=Api&P=0" class="aboutus-symbols">
+                <h6 class="text-center">Cherished relationships </h6></div>
+              <div class="col-sm-6 p-5 justify-content-center d-flex">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.OmcoGgKRPPyxQy_9KGK9UwHaHa&pid=Api&P=0" class="aboutus-symbols">
+                <h6 class="text-center">Customer satisfaction</h6></div>
           </div>
             </div>
           </div>
         </section>
   <section id="footer">  
-    <div class="container">  
+    <div class="container" data-aos="zoom-in">  
     <div class="row text-center text-xs-center text-sm-left text-md-left">  
     <div class="col-xs-12 col-sm-4 col-md-4">  
     <h5> Quick links </h5>  
@@ -167,5 +187,10 @@ Globally we work with the executives, through NHBS LLP-Global, to help them make
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>  
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>  
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
   </html>

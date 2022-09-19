@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -102,7 +103,7 @@
           <div class="col-sm-8">
             <div class="row">
             <div class="col-sm-6"> 
-                    <div class="card h-100">
+                    <div class="card h-100" data-aos="slide-right">
                         <div class="card-header"><h4>Editor's picks</h4></div>
                         <img class="card-img" src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmluYW5jaWFsJTIwdGF4fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="a snow-capped mountain range"/>
                         <div class="card-body">
@@ -112,7 +113,7 @@
                         </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="slide-down">
                 <div style="height: 100%;" class="card h-100">
                     <div class="card-header"><h4>Top news</h4></div>
                 <div class="row justify-content-center m-2">
@@ -152,7 +153,7 @@
                 </div>
             </div>
             </div>
-            <div class="row mt-5 justify-content-center d-flex">
+            <div class="row mt-5 justify-content-center d-flex" data-aos="slide-right">
               <div id="news-carousel" class="carousel slide w-100 mx-3" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -174,7 +175,7 @@
             </div>
             </div> 
             
-            <div class="col-sm-4">
+            <div class="col-sm-4" data-aos="slide-left">
                     <div class="card ">
                         <div class="card-header"><h4>Spotlight</h4></div>
 
@@ -204,8 +205,8 @@
     </section>  
 
     <section id = "proposition">
-      <div class="container">
-        <div class="row justify-content-center d-flex">
+      <div class="container" data-aos="fade-down">
+        <div class="row justify-content-center d-flex" >
           <h2>Unique Selling Proposition</h2>
         </div>
         <div class="row">
@@ -314,7 +315,7 @@
 			
       <div class="row">
         <!-- team member -->
-			<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms">
+			<div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
 				<div class="team-member">
 					<div class="member-photo">
 						<!-- member photo -->
@@ -344,7 +345,7 @@
 			</div>
 			<!-- end team member -->
        <!-- team member -->
-			<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms">
+			<div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
 				<div class="team-member">
 					<div class="member-photo">
 						<!-- member photo -->
@@ -374,7 +375,7 @@
 			</div>
 			<!-- end team member -->
        <!-- team member -->
-			<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms">
+			<div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
 				<div class="team-member">
 					<div class="member-photo">
 						<!-- member photo -->
@@ -404,7 +405,7 @@
 			</div>
 			<!-- end team member -->
        <!-- team member -->
-			<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms">
+			<div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
 				<div class="team-member">
 					<div class="member-photo">
 						<!-- member photo -->
@@ -440,7 +441,7 @@
 
 
    <section id="footer">  
-    <div class="container">  
+    <div class="container" data-aos="zoom-in">  
     <div class="row text-center text-xs-center text-sm-left text-md-left">  
     <div class="col-xs-12 col-sm-4 col-md-4 my-2">  
     <h5> Quick links </h5>  
@@ -506,6 +507,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
