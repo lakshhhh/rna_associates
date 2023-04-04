@@ -31,11 +31,26 @@
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" onclick="serviceClick('0')" data-toggle="modal" data-target="#serviceModal">AUDIT & Assurance </a>
+                  <a class="dropdown-item" onclick="serviceClick('1')" data-toggle="modal" data-target="#serviceModal">Book Keeping & Accounting service</a>
+                  <a class="dropdown-item" onclick="serviceClick('2')" data-toggle="modal" data-target="#serviceModal">Business setup Advisory</a>
+                  <a class="dropdown-item" onclick="serviceClick('3')" data-toggle="modal" data-target="#serviceModal">GST</a>
+                  <a class="dropdown-item" onclick="serviceClick('4')" data-toggle="modal" data-target="#serviceModal">Internal Audit</a>
+                  <a class="dropdown-item" onclick="serviceClick('5')" data-toggle="modal" data-target="#serviceModal">Compliances & Outsourcing</a>
+                  <a class="dropdown-item" onclick="serviceClick('6')" data-toggle="modal" data-target="#serviceModal">Physical Verification Services</a>
+                  <a class="dropdown-item" onclick="serviceClick('7')" data-toggle="modal" data-target="#serviceModal">Start-up Services</a>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="careers.html">Careers</a>
+                <a class="nav-link" href="#team">Team</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact us</a>
               </li>
             </ul>
 
@@ -59,10 +74,7 @@
               <img src="/images/covers/wall.jpeg">
               <div class="text-over-image">
               <h3 class=" display-4">Working at RNA Associates</h3>
-              <p>We work in collaboration with each other, share
-                ideas and knowledge, grow professionally and
-                personally to create a better future for
-                our people & for our clients.</p></div>
+              <p>RNA Associates offers a wide range of specialised, multi-disciplinary professional services that meet the immediate as well as the long-term business needs of clients. We, at RNA Associates focus on providing multi-disciplinary services aimed at creating a strong competitive advantage for our clients in order to help them completely successful in a rapidly changing market place. </p></div>
             </div>
             <div class="carousel-item text-container">
                 <img src="/images/covers/darktable.jpg" >
@@ -96,6 +108,31 @@
         </div>
 
       </section>
+
+
+      <!-- <button type="button" class="btn btn-primary" onclick="serviceClick()" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" >Services</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 <section id= "news-section">
     <div class="container">
@@ -308,12 +345,12 @@
 
    <section>
 
-    <div class="container">
+    <div class="container" id="team">
           <div class="row justify-content-center d-flex">
           <h1 class="team">Our Team</h1>
      </div>
 			
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <!-- team member -->
 			<div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
 				<div class="team-member">
@@ -374,15 +411,11 @@
 				</div>
 			</div>
 			<!-- end team member -->
-       <!-- team member -->
+      <!--
 			<div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
 				<div class="team-member">
 					<div class="member-photo">
-						<!-- member photo -->
 						<img class="img-fluid" src="images/team/mark.jpg" alt="Meghna">
-						<!-- /member photo -->
-
-						<!-- member social profile -->
 						<div class="mask d-flex align-items-center justify-content-center">
 							<ul class="list-inline">
 								<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"> </i></a></li>
@@ -391,28 +424,20 @@
 								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"> </i></a></li>
 							</ul>
 						</div>
-						<!-- /member social profile -->
 					</div>
-					<!-- member name & designation -->
 					<div class="container m-3">
 						<div class="row"><h4>Mark Zuckerberg</h4></div>
 						<div class="row"><p>Designation</p></div>
 					</div>
-					<!-- /member name & designation -->
-					<!-- /about member -->
+		
 
 				</div>
-			</div>
+			</div>-->
 			<!-- end team member -->
-       <!-- team member -->
-			<div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
+			<!-- <div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
 				<div class="team-member">
 					<div class="member-photo">
-						<!-- member photo -->
 						<img class="img-fluid" src="images/team/pichai.jpg" alt="Meghna">
-						<!-- /member photo -->
-
-						<!-- member social profile -->
 						<div class="mask d-flex align-items-center justify-content-center">
 							<ul class="list-inline">
 								<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"> </i></a></li>
@@ -421,18 +446,17 @@
 								<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"> </i></a></li>
 							</ul>
 						</div>
-						<!-- /member social profile -->
+					
 					</div>
-					<!-- member name & designation -->
+					
 					<div class="container m-3">
 						<div class="row"><h4>Sundar Pichai</h4></div>
 						<div class="row"><p>Designation</p></div>
 					</div>
-					<!-- /member name & designation -->
-					<!-- /about member -->
+					
 
 				</div>
-			</div>
+			</div> -->
 			<!-- end team member -->
      
     </div>
@@ -442,8 +466,8 @@
 
    <section id="footer">  
     <div class="container" data-aos="zoom-in">  
-    <div class="row text-center text-xs-center text-sm-left text-md-left">  
-    <div class="col-xs-12 col-sm-4 col-md-4 my-2">  
+    <div class="row text-center text-xs-center text-sm-left text-md-left d-flex justify-content-center">  
+    <!-- <div class="col-xs-12 col-sm-4 col-md-4 my-2">  
     <h5> Quick links </h5>  
       <ul class="list-unstyled quick-links">  
         <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
@@ -452,20 +476,18 @@
         <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
                   <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Videos </a> </li>  
     </ul>  
-    </div>  
+    </div>   -->
     
     
-              <div class="col-xs-12 col-sm-4 col-md-4">  
-        <h5> Quick links </h5>  
+              <div class="col-xs-12 col-sm-4 col-md-4 mx-5 my-10">  
+        <!-- <h5> Quick links </h5>   -->
         <ul class="list-unstyled quick-links">  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Our Services </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Expert Team </a> </li>  
-        </ul>  
+          <li class="list-inline-item"> <a> <i class="fa fa-address-card"> </i> RNA Associates, 433 17th Cross, 34th Main Rd, JP Nagar 6th Phase, Bengaluru, Karnataka 560078</a> </li>  
+          <li class="list-inline-item"> <a href="tel:+918660042033"> <i class="fa fa-phone"> </i> +91- 8660042033 </a> </li>
+          <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> rnaassociates2016@gmail.com  </a> </li>
+          </ul> 
         </div>  
-        <div class="col-xs-12 col-sm-4 col-md-4">  
+        <!-- <div class="col-xs-12 col-sm-4 col-md-4">  
         <h5> Quick links </h5>  
                  <ul class="list-unstyled quick-links">  
          <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
@@ -474,7 +496,7 @@
         <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
         <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Contact </a> </li>  
         </ul>  
-        </div>  
+        </div>   -->
         </div>  
         <div class="row">  
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">  
@@ -483,17 +505,17 @@
                  <li class="list-inline-item"> <a href="#"> <i class="fa fa-twitter"> </i> </a> </li>  
         <li class="list-inline-item"> <a href="#"> <i class="fa fa-instagram"> </i> </a> </li>  
         <li class="list-inline-item"> <a href="#"> <i class="fa fa-google-plus"> </i > </a> </li>  
-        <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> </a> </li>  
+        <li class="list-inline-item"> <a href="rnaassociates2016@gmail.com"> <i class="fa fa-envelope"> </i> </a> </li>  
         </ul>  
         </div>  
         <hr>  
         </div>      
-        <div class="row">  
+        <!-- <div class="row">  
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">  
        <p class="h6"> 2021 ? All right Reversed. <a class="text-green ml-2" href="#" target="_blank">              JavaTpoint </a> </p>  
         </div>  
         <hr>  
-        </div>      
+        </div>       -->
         </div>  
         </section>  
 
@@ -502,6 +524,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>  
+    <script src="./scripts/services.js"></script>
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
      <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -511,6 +534,8 @@
   <script>
     AOS.init();
   </script>
+  
+
 
 </body>
 </html>

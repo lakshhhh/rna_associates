@@ -1,0 +1,23 @@
+#about-banner
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url('/images/covers/aboutus.jpg');
+    object-fit: contain;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.about-values .row{
+    background-color: white;
+    border: solid 0.1px gray;
+}
+.about-values .col-sm-4,.col-sm-6{
+    
+    background-color: white;
+}
+.aboutus-symbols{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}

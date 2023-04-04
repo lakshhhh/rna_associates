@@ -25,16 +25,34 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link  active" href="about.html">About us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" onclick="serviceClick('0')" data-toggle="modal" data-target="#serviceModal">AUDIT & Assurance </a>
+                  <a class="dropdown-item" onclick="serviceClick('1')" data-toggle="modal" data-target="#serviceModal">Book Keeping & Accounting service</a>
+                  <a class="dropdown-item" onclick="serviceClick('2')" data-toggle="modal" data-target="#serviceModal">Business setup Advisory</a>
+                  <a class="dropdown-item" onclick="serviceClick('3')" data-toggle="modal" data-target="#serviceModal">GST</a>
+                  <a class="dropdown-item" onclick="serviceClick('4')" data-toggle="modal" data-target="#serviceModal">Internal Audit</a>
+                  <a class="dropdown-item" onclick="serviceClick('5')" data-toggle="modal" data-target="#serviceModal">Compliances & Outsourcing</a>
+                  <a class="dropdown-item" onclick="serviceClick('6')" data-toggle="modal" data-target="#serviceModal">Physical Verification Services</a>
+                  <a class="dropdown-item" onclick="serviceClick('7')" data-toggle="modal" data-target="#serviceModal">Start-up Services</a>
+                </div>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="careers.html">Careers</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#team">Team</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact us</a>
               </li>
             </ul>
 
@@ -45,28 +63,36 @@
         <h2 style="z-index: 99;" class="display-4 text-over-image">About us</h2>
       </section>
 
+      <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" >Services</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <section>
         <div class="container" data-aos="fade-down">
           <div class="row ">
             <div class="col-sm-8">
-              <h2 class="text-left">What we do</h2>
+              <h2 class="text-left">About us</h2>
                 <p class="text-justify">
-                  NHBS LLP is a business consultancy and innovative services organisation,
-                   established to help bring clarity to clients’ environment, be it inventory,
-                    fixed assets, (for the benefit of owners, lenders or operations),
-                     accounting or an assessment of processes being followed. We provide services in
-                      business consulting and help companies set up shared services to improve
-                       operating efficiencies and achieve business and operational excellence.
-                        Housed in Mumbai, NHBS LLP has over 500+ professionals and a pan India 
-                        network in over 200 cities.
-We believe in the opportunity to serve and improve
- the performance of enterprises, and the ecosystem(s) that they operate in. Therefore, our client
-  portfolio ranges from large MNC’s to small firms across industries and geographical space.
-Our delivery is unmatched in value creation, enabled by a platform of PAN-India presence, led by
- talented and experienced professionals. NHBS LLP brings superior resources and capabilities to our
-  clients like never before in India.
-Globally we work with the executives, through NHBS LLP-Global, to help them make better decisions, convert
- those decisions to actions and deliver the sustainable success they desire.
+                  RNA Associates was established to provide cost-effective financial consultancy for proactive businesses at all levels. Whether looking to establish a new business from scratch or already operating at the highest levels, our experience and expertise could make a real difference.
+Effective financial management can have a beneficial impact on all aspects of your company’s most important operations. Without a strategic approach to financial and taxation planning, you leave the door wide open to potential crises. To achieve your financial goals with strength and confidence, you need the right people in the right positions.
+We are a premier consultancy & Accounting firm offering service in areas of Accounting, Legal Matters, Statutory Registrations, Tax & Outsourcing Services to domestic and multinational business entities by providing you with cost effective, high quality, innovative & practical solutions for your business.
+Whether facing a financial crisis or simply looking to optimize your financial performance, we’re standing by to take your call. Contact us to arrange an obligation-free consultation. 
+
                 </p>
             </div>
             <div class="col-sm-4">
@@ -80,15 +106,15 @@ Globally we work with the executives, through NHBS LLP-Global, to help them make
           data-aos-anchor-placement="center-center">
         <div class="row d-flex justify-content-center">
           <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 h-100">
               <h2 class="heading">Our Mission</h2>
-              <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque accusamus, magni porro vero est repellendus qui similique autem ipsam laborum officiis modi? Quas repudiandae soluta quos autem? Voluptatem, maxime blanditiis?</p>
+              <p class="text-center">To provide reliable professional services with commitment, integrity, excellence, and confidentiality in the system of our firm to meet our customer’s individual requests. </p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card p-3">
+            <div class="card p-3 h-100">
             <h2 class="heading">Our Vision</h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam ratione laboriosam ex non excepturi hic doloribus? Placeat possimus qui harum quo ab illo quae odio error officiis. Incidunt, laboriosam?</p>
+            <p class="text-center">To establish a one roof platform for clients for all their professional needs and to improve constantly.</p>
           </div>
         </div>
           </div>
@@ -128,65 +154,42 @@ Globally we work with the executives, through NHBS LLP-Global, to help them make
             </div>
           </div>
         </section>
-  <section id="footer">  
-    <div class="container" data-aos="zoom-in">  
-    <div class="row text-center text-xs-center text-sm-left text-md-left">  
-    <div class="col-xs-12 col-sm-4 col-md-4">  
-    <h5> Quick links </h5>  
-      <ul class="list-unstyled quick-links">  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
-                  <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Videos </a> </li>  
-    </ul>  
-    </div>  
-              <div class="col-xs-12 col-sm-4 col-md-4">  
-        <h5> Quick links </h5>  
-        <ul class="list-unstyled quick-links">  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Services </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Industries </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Our Services </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Expert Team </a> </li>  
-        </ul>  
-        </div>  
-        <div class="col-xs-12 col-sm-4 col-md-4">  
-        <h5> Quick links </h5>  
-                 <ul class="list-unstyled quick-links">  
-         <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a></li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
-        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Contact </a> </li>  
-        </ul>  
-        </div>  
-        </div>  
-        <div class="row">  
-        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">  
-        <ul class="list-unstyled list-inline social text-center">  
-        <li class="list-inline-item"> <a href="#"> <i class="fa fa-facebook"> </i> </a> </li>  
-                 <li class="list-inline-item"> <a href="#"> <i class="fa fa-twitter"> </i> </a> </li>  
-        <li class="list-inline-item"> <a href="#"> <i class="fa fa-instagram"> </i> </a> </li>  
-        <li class="list-inline-item"> <a href="#"> <i class="fa fa-google-plus"> </i > </a> </li>  
-        <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> </a> </li>  
-        </ul>  
-        </div>  
-        <hr>  
-        </div>      
-        <div class="row">  
-        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">  
-       <p class="h5"> 2021  All right Reversed. <a class="text-green ml-2" href="#" target="_blank">              JavaTpoint </a> </p>  
-        </div>  
-        <hr>  
-        </div>      
-        </div>  
-        </section>  
+        <section id="footer">  
+          <div class="container" data-aos="zoom-in">  
+          <div class="row text-center text-xs-center text-sm-left text-md-left d-flex justify-content-center">  
+          
+          
+          
+                    <div class="col-xs-12 col-sm-4 col-md-4 mx-5 my-10">  
+              <ul class="list-unstyled quick-links">  
+              <li class="list-inline-item"> <a> <i class="fa fa-address-card"> </i> RNA Associates, 433 17th Cross, 34th Main Rd, JP Nagar 6th Phase, Bengaluru, Karnataka 560078</a> </li>  
+              <li class="list-inline-item"> <a href="tel:+918660042033"> <i class="fa fa-phone"> </i> +91- 8660042033 </a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> rnaassociates2016@gmail.com  </a> </li>
+              </ul>  
+              </div>  
+         
+              </div>  
+              <div class="row">  
+              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">  
+              <ul class="list-unstyled list-inline social text-center">  
+              <li class="list-inline-item"> <a href="#"> <i class="fa fa-facebook"> </i> </a> </li>  
+                       <li class="list-inline-item"> <a href="#"> <i class="fa fa-twitter"> </i> </a> </li>  
+              <li class="list-inline-item"> <a href="#"> <i class="fa fa-instagram"> </i> </a> </li>  
+              <li class="list-inline-item"> <a href="#"> <i class="fa fa-google-plus"> </i > </a> </li>  
+              <li class="list-inline-item"> <a href="mailto:rnaassociates2016@gmail.com"> <i class="fa fa-envelope"> </i> </a> </li>  
+              </ul>  
+              </div>  
+              <hr>  
+              </div>      
+              
+              </div>  
+              </section>  
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>  
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>  
+        <script src="./scripts/services.js"></script>
         <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

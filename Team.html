@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>RNA Associates</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/favicon.png" ></img></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" onclick="serviceClick('0')" data-toggle="modal" data-target="#serviceModal">AUDIT & Assurance </a>
+                  <a class="dropdown-item" onclick="serviceClick('1')" data-toggle="modal" data-target="#serviceModal">Book Keeping & Accounting service</a>
+                  <a class="dropdown-item" onclick="serviceClick('2')" data-toggle="modal" data-target="#serviceModal">Business setup Advisory</a>
+                  <a class="dropdown-item" onclick="serviceClick('3')" data-toggle="modal" data-target="#serviceModal">GST</a>
+                  <a class="dropdown-item" onclick="serviceClick('4')" data-toggle="modal" data-target="#serviceModal">Internal Audit</a>
+                  <a class="dropdown-item" onclick="serviceClick('5')" data-toggle="modal" data-target="#serviceModal">Compliances & Outsourcing</a>
+                  <a class="dropdown-item" onclick="serviceClick('6')" data-toggle="modal" data-target="#serviceModal">Physical Verification Services</a>
+                  <a class="dropdown-item" onclick="serviceClick('7')" data-toggle="modal" data-target="#serviceModal">Start-up Services</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+<!-- 
+    <section id = "banner-section" class="d-flex justify-content-center align-items-center">
+      <div class="container d-flex justify-content-center align-items-center">
+          <h4 class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Esse, est deleniti sequi possimus sit maxime dolorum magnam consequuntur officia assumenda non,
+              provident eveniet hic soluta, sint animi similique magni commodi.</h4>
+      </div>
+    </section> -->
+
+    <section id="banner-section">
+      <div class="container-fluid justify-content-center d-flex p-0">
+        <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item text-container active">
+              <img src="/images/covers/wall.jpeg">
+              <div class="text-over-image">
+              <h3 class=" display-4">Working at RNA Associates</h3>
+              <p>RNA Associates offers a wide range of specialised, multi-disciplinary professional services that meet the immediate as well as the long-term business needs of clients. We, at RNA Associates focus on providing multi-disciplinary services aimed at creating a strong competitive advantage for our clients in order to help them completely successful in a rapidly changing market place. </p></div>
+            </div>
+            <div class="carousel-item text-container">
+                <img src="/images/covers/darktable.jpg" >
+                <div class="text-over-image">
+                  <h3 class=" display-4">Working at RNA Associates</h3>
+                  <p>We work in collaboration with each other, share
+                    ideas and knowledge, grow professionally and
+                    personally to create a better future for
+                    our people & for our clients.</p></div>
+                </div>
+            
+            <div class="carousel-item text-container">
+              <img src="/images/covers/darkertable.webp" >
+              <div class="text-over-image">
+                <h3 class=" display-4">Working at RNA Associates</h3>
+                <p>We work in collaboration with each other, share
+                  ideas and knowledge, grow professionally and
+                  personally to create a better future for
+                  our people & for our clients.</p></div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#banner-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </section>
+
+
+      <!-- <button type="button" class="btn btn-primary" onclick="serviceClick()" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" >Services</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+ 
+
+
+
+
+  
+
+   <section id="footer">  
+    <div class="container" data-aos="zoom-in">  
+    <div class="row text-center text-xs-center text-sm-left text-md-left d-flex justify-content-center">  
+    <!-- <div class="col-xs-12 col-sm-4 col-md-4 my-2">  
+    <h5> Quick links </h5>  
+      <ul class="list-unstyled quick-links">  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
+                  <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Videos </a> </li>  
+    </ul>  
+    </div>   -->
+    
+    
+              <div class="col-xs-12 col-sm-4 col-md-4 mx-5 my-10">  
+        <!-- <h5> Quick links </h5>   -->
+        <ul class="list-unstyled quick-links">  
+        <!-- <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Address: RNA Associates, 433 17th Cross, 34th Main Rd, JP Nagar 6th Phase, Bengaluru, Karnataka 560078</a> </li>   -->
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-address-card"> </i> RNA Associates, 433 17th Cross, 34th Main Rd, JP Nagar 6th Phase, Bengaluru, Karnataka 560078</a> </li>  
+        <!-- <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Phone: : +91- 8660042033 </a> </li>   -->
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-phone"> </i> +91- 8660042033 </a> </li>
+        <!-- <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> E-mail: rnaassociates2016@gmail.com </a> </li>   -->
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> rnaassociates2016@gmail.com  </a> </li>
+        <!-- <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>   -->
+        <!-- <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Expert Team </a> </li>   -->
+        </ul>  
+        </div>  
+        <!-- <div class="col-xs-12 col-sm-4 col-md-4">  
+        <h5> Quick links </h5>  
+                 <ul class="list-unstyled quick-links">  
+         <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a></li>  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
+        <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Contact </a> </li>  
+        </ul>  
+        </div>   -->
+        </div>  
+        <div class="row">  
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">  
+        <ul class="list-unstyled list-inline social text-center">  
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-facebook"> </i> </a> </li>  
+                 <li class="list-inline-item"> <a href="#"> <i class="fa fa-twitter"> </i> </a> </li>  
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-instagram"> </i> </a> </li>  
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-google-plus"> </i > </a> </li>  
+        <li class="list-inline-item"> <a href="rnaassociates2016@gmail.com"> <i class="fa fa-envelope"> </i> </a> </li>  
+        </ul>  
+        </div>  
+        <hr>  
+        </div>      
+        <!-- <div class="row">  
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">  
+       <p class="h6"> 2021 ? All right Reversed. <a class="text-green ml-2" href="#" target="_blank">              JavaTpoint </a> </p>  
+        </div>  
+        <hr>  
+        </div>       -->
+        </div>  
+        </section>  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>  
+    <script src="./scripts/services.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+
+
+</body>
+</html>

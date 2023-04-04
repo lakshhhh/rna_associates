@@ -39,3 +39,15 @@
  #service-block{
    background-color: white;
  }
+ .nav-tabs>li {
+  height:62px;
+}
+.nav-tabs>li>a, .nav-tabs>li>a>div {
+  height:100%;
+  display:table;
+}
+.nav-tabs>li>a span {
+  display:table-cell;
+  vertical-align:middle;
+}
+
