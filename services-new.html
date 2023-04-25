@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/services-new.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/scripts/services-new.js"></script>
+    <title>RNA Associates</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/favicon.png" ></img></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" onclick="serviceClick('0')" data-toggle="modal" data-target="#serviceModal">AUDIT & Assurance </a>
+                  <a class="dropdown-item" onclick="serviceClick('1')" data-toggle="modal" data-target="#serviceModal">Book Keeping & Accounting service</a>
+                  <a class="dropdown-item" onclick="serviceClick('2')" data-toggle="modal" data-target="#serviceModal">Business setup Advisory</a>
+                  <a class="dropdown-item" onclick="serviceClick('3')" data-toggle="modal" data-target="#serviceModal">GST</a>
+                  <a class="dropdown-item" onclick="serviceClick('4')" data-toggle="modal" data-target="#serviceModal">Internal Audit</a>
+                  <a class="dropdown-item" onclick="serviceClick('5')" data-toggle="modal" data-target="#serviceModal">Compliances & Outsourcing</a>
+                  <a class="dropdown-item" onclick="serviceClick('6')" data-toggle="modal" data-target="#serviceModal">Physical Verification Services</a>
+                  <a class="dropdown-item" onclick="serviceClick('7')" data-toggle="modal" data-target="#serviceModal">Start-up Services</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  active" href="#team">Team</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact us</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      
+
+      
+      <section class="iq-features">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-12"></div>
+            <div class="col-lg-6 col-md-12">
+              <div class="holderCircle">
+                <div class="round"></div>
+                <div class="dotCircle">
+                  <span class="itemDot active itemDot1" data-tab="1">
+                    <i class="fa fa-clock-o"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot2" data-tab="2">
+                    <i class="fa fa-comments"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot3" data-tab="3">
+                    <i class="fa fa-user"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot4" data-tab="4">
+                    <i class="fa fa-tags"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot5" data-tab="5">
+                    <i class="fa fa-upload"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot6" data-tab="6">
+                    <i class="fa fa-briefcase"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot6" data-tab="6">
+                    <i class="fa fa-briefcase"></i>
+                    <span class="forActive"></span>
+                  </span>
+                  <span class="itemDot itemDot6" data-tab="6">
+                    <i class="fa fa-briefcase"></i>
+                    <span class="forActive"></span>
+                  </span>
+                </div>
+                <div class="contentCircle">
+                  <div class="CirItem title-box active CirItem1">
+                    <h2 class="title"><span>Automate</span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-clock-o"></i>
+                  </div>
+                  <div class="CirItem title-box CirItem2">
+                    <h2 class="title"><span>Chat </span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-comments"></i>
+                  </div>
+                  <div class="CirItem title-box CirItem3">
+                    <h2 class="title"><span>Responses</span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-user"></i>
+                  </div>
+                  <div class="CirItem title-box CirItem4">
+                    <h2 class="title"><span>Tags</span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-tags"></i>
+                  </div>
+                  <div class="CirItem title-box CirItem5">
+                    <h2 class="title"><span>Sharing</span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-upload"></i>
+                  </div>
+                  <div class="CirItem title-box CirItem6">
+                    <h2 class="title"><span>Support</span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <div class="CirItem title-box CirItem6">
+                    <h2 class="title"><span>Support</span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <div class="CirItem title-box CirItem6">
+                    <h2 class="title"><span>Support</span></h2>
+                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- <button type="button" class="btn btn-primary" onclick="serviceClick()" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+      
+      <!-- Modal -->
+      <div class="modal fade" id="serviceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" >Services</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+ 
+
+
+
+
+  
+
+   <section id="footer">  
+    <div class="container px-5" data-aos="zoom-in">  
+    <div class="row text-center text-xs-center text-sm-left text-md-left d-flex justify-content-between align-items-center">  
+    
+        <div class="col-sm-4">  
+            <h3 class="text-light text-center">Contact us </h3>
+        <ul class="list-unstyled quick-links">  
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-address-card"> </i> RNA Associates, 433 17th Cross, 34th Main Rd, JP Nagar 6th Phase, Bengaluru, Karnataka 560078</a> </li>  
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-phone"> </i> +91- 8660042033 </a> </li>
+        <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> rnaassociates2016@gmail.com  </a> </li>
+        </ul>  
+        
+
+          <ul class="list-unstyled list-inline social text-center">  
+          <li class="list-inline-item"> <a href="#"> <i class="fa fa-facebook"> </i> </a> </li>  
+                   <li class="list-inline-item"> <a href="#"> <i class="fa fa-twitter"> </i> </a> </li>  
+          <li class="list-inline-item"> <a href="#"> <i class="fa fa-instagram"> </i> </a> </li>  
+          <li class="list-inline-item"> <a href="#"> <i class="fa fa-google-plus"> </i > </a> </li>  
+          <li class="list-inline-item"> <a href="rnaassociates2016@gmail.com"> <i class="fa fa-envelope"> </i> </a> </li>  
+          </ul>  
+
+        </div>  
+        <div class="col-sm-5">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+            <div class="text-center" >
+              <h3 class="text-light">Get in touch</h3>
+            </div>
+            </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                <form data-aos='fade-in' >
+                  <div  class="form-group">
+                    <label>Name</label>
+                    <input onkeyup="onChange()" type="text" class="form-control" id="name" placeholder="Enter name">
+                  </div>
+                  <div class="form-group">
+                    <label>Feedback/Query</label>
+                    <textarea onkeyup="onChange()" rows="2" type="password" class="form-control " id="query" placeholder="Feedback/Query"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center row">
+                    <button disabled="true" id="submit"
+                      onclick="sendEmail()" type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+    
+              </div>
+            </div>
+        </div>
+        </div>
+       
+        </div>  
+   
+        </div>  
+        </section>  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>  
+    <script src="./scripts/services.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+
+
+</body>
+</html>
