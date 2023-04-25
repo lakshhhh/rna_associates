@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/services-new.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/scripts/services-new.js"></script>
@@ -35,19 +36,10 @@
                 <a class="nav-link" href="about.html">About us</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="#" id="navbarDropdown">
                   Services
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" onclick="serviceClick('0')" data-toggle="modal" data-target="#serviceModal">AUDIT & Assurance </a>
-                  <a class="dropdown-item" onclick="serviceClick('1')" data-toggle="modal" data-target="#serviceModal">Book Keeping & Accounting service</a>
-                  <a class="dropdown-item" onclick="serviceClick('2')" data-toggle="modal" data-target="#serviceModal">Business setup Advisory</a>
-                  <a class="dropdown-item" onclick="serviceClick('3')" data-toggle="modal" data-target="#serviceModal">GST</a>
-                  <a class="dropdown-item" onclick="serviceClick('4')" data-toggle="modal" data-target="#serviceModal">Internal Audit</a>
-                  <a class="dropdown-item" onclick="serviceClick('5')" data-toggle="modal" data-target="#serviceModal">Compliances & Outsourcing</a>
-                  <a class="dropdown-item" onclick="serviceClick('6')" data-toggle="modal" data-target="#serviceModal">Physical Verification Services</a>
-                  <a class="dropdown-item" onclick="serviceClick('7')" data-toggle="modal" data-target="#serviceModal">Start-up Services</a>
-                </div>
+                
               </li>
               <li class="nav-item">
                 <a class="nav-link  active" href="#team">Team</a>
@@ -69,90 +61,96 @@
           <div class="row align-items-center">
             <div class="col-lg-3 col-md-12"></div>
             <div class="col-lg-6 col-md-12">
-              <div class="holderCircle">
-                <div class="round"></div>
+              <div class="holderCircle" style="z-index:1">
+                <div class="round" ></div>
+                <div class="contentCircle" style="z-index:100">
+                    <div class="CirItem title-box active CirItem1">
+                      <h2 class="title"><span>AUDIT & Assurance</span></h2>
+                      <p class="p-button" onclick="serviceClick('0')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                          learn more
+                      </p>
+                      
+                    </div>
+                    <div class="CirItem title-box CirItem2">
+                      <h2 class="title"><span>Book Keeping & Accounting service</span></h2>
+                      <p class="p-button" onclick="serviceClick('1')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                        learn more
+                    </p>
+                    </div>
+                    <div class="CirItem title-box CirItem3">
+                      <h2 class="title"><span>Business setup Advisory</span></h2>
+                      <p class="p-button" onclick="serviceClick('2')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                        learn more
+                    </p>                    </div>
+                    <div class="CirItem title-box CirItem4">
+                      <h2 class="title"><span>GST</span></h2>
+                      <p class="p-button" onclick="serviceClick('3')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                        learn more
+                    </p>                    </div>
+                    <div class="CirItem title-box CirItem5">
+                      <h2 class="title"><span>Internal Audit</span></h2>
+                      <p class="p-button" onclick="serviceClick('4')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                        learn more
+                    </p>                    </div>
+                    <div class="CirItem title-box CirItem6">
+                      <h2 class="title"><span>Compliances & Outsourcing</span></h2>
+                      <p class="p-button" onclick="serviceClick('5')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                        learn more
+                    </p>                    </div>
+                    <div class="CirItem title-box CirItem7">
+                      <h2 class="title"><span>Physical Verification Services</span></h2>
+                      <p class="p-button" onclick="serviceClick('6')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                        learn more
+                    </p>                    </div>
+                    <div class="CirItem title-box CirItem8">
+                      <h2 class="title"><span>Start-up Services</span></h2>
+                      <p class="p-button" onclick="serviceClick('7')" data-toggle="modal" data-target="#serviceModal" style="z-index:100">
+                        learn more
+                    </p>                    </div>
+                  </div>
                 <div class="dotCircle">
                   <span class="itemDot active itemDot1" data-tab="1">
-                    <i class="fa fa-clock-o"></i>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>                    
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot2" data-tab="2">
-                    <i class="fa fa-comments"></i>
+                    <i class="fa-solid fa-regular fa-book-bookmark"></i>
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot3" data-tab="3">
-                    <i class="fa fa-user"></i>
+                    <i class="fa-solid fa-briefcase"></i>
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot4" data-tab="4">
-                    <i class="fa fa-tags"></i>
+                    <i class="fa-solid fa-tags"></i>
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot5" data-tab="5">
-                    <i class="fa fa-upload"></i>
+                    <i class="fa-solid fa-upload"></i>
                     <span class="forActive"></span>
                   </span>
                   <span class="itemDot itemDot6" data-tab="6">
-                    <i class="fa fa-briefcase"></i>
-                    <span class="forActive"></span>
+                    <i class="fa-solid fa-light fa-gears"></i>
+                <span class="forActive"></span>
                   </span>
-                  <span class="itemDot itemDot6" data-tab="6">
-                    <i class="fa fa-briefcase"></i>
-                    <span class="forActive"></span>
+                  <span class="itemDot itemDot6" data-tab="7">
+                    <i class="fa-solid fa-inbox"></i>
+                <span class="forActive"></span>
                   </span>
-                  <span class="itemDot itemDot6" data-tab="6">
-                    <i class="fa fa-briefcase"></i>
+                  <span class="itemDot itemDot6" data-tab="8">
+                    <i class="fa-solid fa-play"></i>
                     <span class="forActive"></span>
                   </span>
                 </div>
-                <div class="contentCircle">
-                  <div class="CirItem title-box active CirItem1">
-                    <h2 class="title"><span>Automate</span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <div class="CirItem title-box CirItem2">
-                    <h2 class="title"><span>Chat </span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-comments"></i>
-                  </div>
-                  <div class="CirItem title-box CirItem3">
-                    <h2 class="title"><span>Responses</span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-user"></i>
-                  </div>
-                  <div class="CirItem title-box CirItem4">
-                    <h2 class="title"><span>Tags</span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-tags"></i>
-                  </div>
-                  <div class="CirItem title-box CirItem5">
-                    <h2 class="title"><span>Sharing</span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-upload"></i>
-                  </div>
-                  <div class="CirItem title-box CirItem6">
-                    <h2 class="title"><span>Support</span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-briefcase"></i>
-                  </div>
-                  <div class="CirItem title-box CirItem6">
-                    <h2 class="title"><span>Support</span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-briefcase"></i>
-                  </div>
-                  <div class="CirItem title-box CirItem6">
-                    <h2 class="title"><span>Support</span></h2>
-                    <p>tfhdfghfghfghfgjtyjtyhfg ftgfthtyjyutg rthtryjdrhrt tyjdrytyjuty tjtyjtyjtdy</p>
-                    <i class="fa fa-briefcase"></i>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <div class="col-lg-3 col-md-12"></div>
           </div>
         </div>
       </section>
+
+      
 
 
       <!-- <button type="button" class="btn btn-primary" onclick="serviceClick()" data-toggle="modal" data-target="#exampleModal">

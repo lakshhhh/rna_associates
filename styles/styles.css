@@ -184,3 +184,8 @@ color: #fff;
  .heading{
     color:#003153;
  }
+
+ .modal-body{
+    max-height: 70vh;
+    overflow-y: scroll;
+ }
