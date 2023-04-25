@@ -1,53 +1,38 @@
-#service-banner{
-    /* background: url("https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwc3BhY2V8ZW58MHx8MHx8&w=1000&q=80") no-repeat; */
+  .servicecard {
+    background: linear-gradient(#ffffff 50%, #003153 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 1rem;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    transition: 0.5s;
+  }
+  
+  #service-banner{
     background-size: cover;
     background-repeat: no-repeat;
     background-image:
-    /* linear-gradient(to top,
-      rgba(0, 0, 0, 0.75),
-      rgba(255, 255, 255, 0.75)),  */
-      url('https://cu-media.s3.amazonaws.com/images/desk-comp.jpg');
+    url('https://cu-media.s3.amazonaws.com/images/desk-comp.jpg');
     object-fit: contain;
     background-position: bottom;
     height: 100vh;
  }
 
- .gear-icon
- {
-   opacity: 0.5;
-   object-fit: contain !important;
-   /* height: 100vh ; */
-    /* width: 5rem;
-    height: 5rem; */
-    /* object-fit: contain; */
-    /* opacity: 0.5;
-    filter: blur(0.5rem); */
-    /* height: 100vh;
-    background-position: center;
-    padding: 0;
-    background-image: url("/images/gear-icon.png");
-    opacity: 0.4;
-    background-repeat: no-repeat; */
- }
-
- #service-block img{
-   height: 100vh;
-   object-fit: cover;
-   max-height: 10rem;
- }
-
- #service-block{
-   background-color: white;
- }
- .nav-tabs>li {
-  height:62px;
-}
-.nav-tabs>li>a, .nav-tabs>li>a>div {
-  height:100%;
-  display:table;
-}
-.nav-tabs>li>a span {
-  display:table-cell;
-  vertical-align:middle;
-}
-
+  .servicecard:hover {
+    background-position: 0 100%;
+  }
+  .servicecard:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #2c7bfe;
+  }
+  .servicecard:hover h3 {
+    color: #ffffff;
+  }
+  .servicecard:hover p {
+    color: #f0f0f0;
+  }
+  
+  .logo{
+    object-fit: contain;
+    width: 10rem;
+    height: 10rem;
+  }

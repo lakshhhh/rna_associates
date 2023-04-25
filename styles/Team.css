@@ -54,6 +54,7 @@
   position: relative;
   object-fit: contain;
   height: 15rem;
+  background-color: black;
   /* width:100vh; */
 }  
   .member-photo:hover img {
