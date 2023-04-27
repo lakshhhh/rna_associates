@@ -8,6 +8,11 @@
   width: 100%;
 }
 
+.associate-bg{
+  background-image:url("/images/covers/feedbakc-slider.jpeg");
+}
+
+
 .logo {
   height: 8rem;
   width: 8rem;
