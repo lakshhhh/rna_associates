@@ -38,7 +38,7 @@
                 </a>
               
                 <li class="nav-item">
-                  <a class="nav-link" href="Team.html">Associates & clients</a>
+                  <a class="nav-link active" href="Team.html">Associates & clients</a>
                 </li> 
             </ul>
 
@@ -46,78 +46,8 @@
         </div>
       </nav>
 
-      <!-- <section>
-
-        <div class="container mt-5 pt-5" id="team">
-              <div class="row justify-content-center d-flex">
-              <h2 class="team">Team</h2>
-         </div>
-          
-          <div class="row d-flex justify-content-center"> -->
-            <!-- team member -->
-          <!-- <div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo"> -->
-                <!-- member photo -->
-                <!-- <img class="img-fluid" src="data/team/team1.jpg"> -->
-                <!-- /member photo -->
-    
-                <!-- member social profile -->
-                <!-- <div class="mask d-flex align-items-center justify-content-center">
-                  <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"> </i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"> </i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"> </i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"> </i></a></li>
-                  </ul>
-                </div> -->
-                <!-- /member social profile -->
               </div>
-              <!-- member name & designation -->
-              <!-- <div class="container m-3">
-                <div class="row"><h4>Arjun Diwakar</h4></div>
-                <div class="row"><p>Designation</p></div>
-              </div> -->
-              <!-- /member name & designation -->
-              <!-- /about member -->
-    
-            <!-- </div>
-          </div> -->
-          <!-- end team member -->
-           <!-- team member -->
-          <!-- <div class="col-lg-3 col-md-6 wow fadeIn" data-aos="fade-down" data-wow-duration="500ms">
-            <div class="team-member">
-              <div class="member-photo"> -->
-                <!-- member photo -->
-                <!-- <img class="img-fluid" src="data/team/team2.jpg"> -->
-                <!-- /member photo -->
-    
-                <!-- member social profile -->
-                <!-- <div class="mask d-flex align-items-center justify-content-center">
-                  <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"> </i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"> </i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"> </i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"> </i></a></li>
-                  </ul>
-                </div> -->
-                <!-- /member social profile -->
-              <!-- </div> -->
-              <!-- member name & designation -->
-              <!-- <div class="container m-3">
-                <div class="row"><h4>Mahesh Nanjunda </h4></div>
-                <div class="row"><p>Designation</p></div>
-              </div> -->
-              <!-- /member name & designation -->
-              <!-- /about member -->
-    
-            <!-- </div>
-          </div>
-          
          
-        </div>
-       </div> 
-       </section> -->
 
       <section id="associates-section">
         <div class="container pt-5 mt-5" >
@@ -127,14 +57,14 @@
             </div>
           </div>
           <div class="row associates-row  justify-content-around pr-5">
-            <div class="col-sm-3 py-3 d-flex flex-row-reverse align-items-center">
+            <div class="col-sm-3 py-3 d-flex justify-content-center align-items-center">
               <a href="https://www.nhbsgroup.com/" target="_blank">
                 <img style="height:10rem;width:10rem" class="logo" src="data/associates/associate1.png" data-aos="zoom-in" style="width:100%">
               </a>
             </div>
             <div class="col-sm-3 py-3 d-flex justify-content-center align-items-center">
               <a href="https://investor.fb.com/home/default.aspx"  target="_blank">
-                <img class="logo" src="data/associates/associate2.jpg" data-aos="zoom-in" style="width:100%">
+                <img class="logo" src="data/associates/associate2.png" data-aos="zoom-in" style="width:100%">
               </a>
           </div>
           <div class="col-sm-3 py-3 d-flex justify-content-center align-items-center">
@@ -261,17 +191,21 @@
             </div>
                 <div class="row justify-content-center">
                     <div class="col-12">
-                <form data-aos='fade-in' >
+                <form data-aos='fade-in' action="https://docs.google.com/forms/d/e/1FAIpQLScBaOC5id2k8RgUeN6YoWP3-e6kKQbQCuvqf5IPH86fZD65dA/formResponse" >
                   <div  class="form-group">
-                    <input onkeyup="onChange()" type="text" class="form-control" id="name" placeholder="Enter name">
+                    <input type="text" class="form-control" name="entry.1781500597" id="name" placeholder="Enter name">
                   </div>
-                  <div class="form-group">
-                    <textarea onkeyup="onChange()" rows="2" type="password" class="form-control " id="query" placeholder="Feedback/Query"></textarea>
+                  <div  class="form-group">
+                    <input type="email" class="form-control" name="entry.1640447617" id="name" placeholder="Enter Email">
                   </div>
-                  <div class="d-flex justify-content-center row">
-                    <button disabled="false" id="submit"
-                      onclick="sendEmail()" type="submit" class="btn btn-primary">Submit</button>
+                  <div  class="form-group">
+                    <input  type="tel" class="form-control" name="entry.297979220" id="name" placeholder="Enter Phone number">
                   </div>
+                  <div  class="form-group">
+                    <textarea  type="text" class="form-control" name="entry.2040870261" rows="2" id="name" placeholder="Enter your Query"></textarea>
+                  </div>
+                  <input  type="submit" class="btn btn-primary" value="Submit" />
+
                 </form>
     
               </div>
@@ -290,6 +224,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>  
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>  
     <script src="./scripts/services.js"></script>
+    <script src="./scripts/footer.js"></script>
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
      <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

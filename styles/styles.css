@@ -25,6 +25,10 @@ body{
   
 }
 
+p{
+    font-size: 1.15rem;
+}
+
 /* end of root styles */
 /* navbar styles */
  .nav-link,.navbar-brand
