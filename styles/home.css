@@ -1,4 +1,3 @@
-
 /* banner styles */
 /* #banner-section
 {
@@ -8,115 +7,108 @@
     object-fit: contain;
     height: 100vh;
 } */
-#banner-section img{
+#banner-section img {
   height: 100vh;
   object-fit: cover;
   width: 100%;
 }
-#banner-carousel{
+#banner-carousel {
   width: 100%;
 }
-
 
 /* banner style ends here  */
 
 /* news style */
 
-#news-section .card
-{
-    background-color: white;
+#news-section .card {
+  background-color: white;
 }
 
-#news-section .card-header{
-    background-color: #003153 ;
-    color: white;
+#news-section .card-header {
+  background-color: #003153;
+  color: white;
 }
 
-#news-carousel img
-{
-    width: 30rem;
-    height: 20rem;
-    object-fit: contain;
-    background-color: black;
+#news-carousel img {
+  width: 30rem;
+  height: 20rem;
+  object-fit: contain;
+  background-color: black;
 }
-
-
 
 /* news style ends here */
-
 
 /* team styles start here  */
 
 .team-member {
-    background-color: white;
-  }
-  .team-member:hover .mask {
-    cursor: pointer;
-    opacity: 1;
-    background-color: rgba(0,0,0,0.5); 
-    /* opacity: 0.5; */
-    /* filter: blur(2rem); */
-    transform: rotateY(0deg) scale(1, 1);
-  }
-  
-  .member-photo {
-    overflow: hidden;
-    position: relative;
-    object-fit: contain;
-    height: 15rem;
-    /* width:100vh; */
-  }  
-    .member-photo:hover img {
-      transform: scale(1.2);
-    }
-  
-    img {
-      transition: all 0.4s ease 0s;
-    }
-  
-    .mask {
-      background-color: rgba(cyan, .7);
-      position: absolute;
-      text-align: center;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0;
-      opacity: 0;
-      filter: alpha(opacity=0);
-      transition: all .5s ease-out 0s;
-      transform: rotateY(180deg) scale(0.5, 0.5);
-    }
-     .mask ul {
-        text-align: center;
-        position: relative;
-     }
-    .mask ul li a{
-            border: 1px solid white;
-            padding: 0.5rem;
-            color: #fff;
-            display: block;
-            font-size: 1rem;
-            text-align: center;
-    }
-    .mask ul li a:hover{
-        border: 1px solid white;
-        background-color: white;
-        padding: 0.5rem;
-        color: black;
-        display: block;
-        font-size: 1rem;
-        text-align: center;
+  background-color: white;
+}
+.team-member:hover .mask {
+  cursor: pointer;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* opacity: 0.5; */
+  /* filter: blur(2rem); */
+  transform: rotateY(0deg) scale(1, 1);
 }
 
+.member-photo {
+  overflow: hidden;
+  position: relative;
+  object-fit: contain;
+  height: 15rem;
+  /* width:100vh; */
+}
+.member-photo:hover img {
+  transform: scale(1.2);
+}
+
+img {
+  transition: all 0.4s ease 0s;
+}
+
+.mask {
+  background-color: rgba(cyan, 0.7);
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.5s ease-out 0s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.mask ul {
+  text-align: center;
+  position: relative;
+}
+.mask ul li a {
+  border: 1px solid white;
+  padding: 0.5rem;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
+.mask ul li a:hover {
+  border: 1px solid white;
+  background-color: white;
+  padding: 0.5rem;
+  color: black;
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+}
 
 /* team styles ends here */
 
 /* feedback carousel starts here  */
 
-#feedback-slider{
+#feedback-slider {
   text-shadow: 2px 2px 8px black;
-  background-image:url("/images/covers/feedbakc-slider.jpeg") ;
+  background-image: url("/images/covers/feedbakc-slider.jpeg");
   height: 70vh;
   background-attachment: fixed;
   background-size: cover;
@@ -124,12 +116,28 @@
   background-position: center;
 }
 
-#feedback-carousel{
+#feedback-carousel {
   color: white;
 }
-.feedback-img{
+.feedback-img {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
 }
 /* feedback carousel ends here  */
+
+.review-image {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  align-self: flex-start; /* Aligns it at the top */
+}
+
+.name {
+  font-weight: 100;
+  color: rgb(255, 191, 0);
+}
